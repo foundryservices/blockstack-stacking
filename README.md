@@ -1,6 +1,16 @@
 # Start Stacking on Stacks 2.0 Testnet
 ## from [https://docs.blockstack.org/stacks-blockchain/integrate-stacking](https://docs.blockstack.org/stacks-blockchain/integrate-stacking)
 
+## Create a Wallet
+```
+npx blockstack-cli@1.1.0-beta.1 make_keychain -t
+```
+
+## Fund your Wallet
+```
+curl -XPOST "https://stacks-node-api.blockstack.org/extended/v1/faucets/stx?address=**<stxAddress>**&stacking=true"
+```
+
 ## Importing your wallet
 Create a .env file containing your private key
 ```.env
