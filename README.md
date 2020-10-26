@@ -1,5 +1,5 @@
 # Start Stacking on Stacks 2.0 Testnet
-## from [https://docs.blockstack.org/stacks-blockchain/integrate-stacking](https://docs.blockstack.org/stacks-blockchain/integrate-stacking)
+#### from [https://docs.blockstack.org/stacks-blockchain/integrate-stacking](https://docs.blockstack.org/stacks-blockchain/integrate-stacking)
 
 ## Create a Wallet
 ```
@@ -17,8 +17,11 @@ Create a .env file containing your private key
 pk=<pk>
 ```
 
-### Run With
+### Stacking
 ```
+# clone
+git clone https://github.com/foundryservices/blockstack-stacking.git
+cd blockstack-stacking
 # install 
 npm i 
 # stack
