@@ -1,10 +1,20 @@
 # Start Stacking on Stacks 2.0 Testnet
-#### from [https://docs.blockstack.org/stacks-blockchain/integrate-stacking](https://docs.blockstack.org/stacks-blockchain/integrate-stacking)
+## from [https://docs.blockstack.org/stacks-blockchain/integrate-stacking](https://docs.blockstack.org/stacks-blockchain/integrate-stacking)
 
 ## Create a Wallet
+### Using CLI
 ```
 npx blockstack-cli@1.1.0-beta.1 make_keychain -t
 ```
+
+### Using GUI
+Create a wallet by downloading or building from source [here](https://github.com/blockstack/stacks-wallet). You will create a new software wallet or via ledger with a 24 word seed phrase. From there you can request testnet funds or fund via the cli. Next you need to get your private key using the cli
+```
+npx blockstack-cli@1.1.0-beta.1 get_stacks_wallet_key <Your Seed Phrase>
+```
+
+Paste the outputted private key into your .env and you are good to go
+
 
 ## Fund your Wallet
 ```
@@ -17,11 +27,8 @@ Create a .env file containing your private key
 pk=<pk>
 ```
 
-### Stacking
+### Run With
 ```
-# clone
-git clone https://github.com/foundryservices/blockstack-stacking.git
-cd blockstack-stacking
 # install 
 npm i 
 # stack
